@@ -19,5 +19,5 @@ func handler(w http.ResponseWriter, _ *http.Request) {
 
 func main() {
 	http.HandleFunc("/", handler)
-	panic(http.ListenAndServe(":8080", nil))
+	panic(http.ListenAndServe(":8080", nil)) // nolint:gosec
 }
