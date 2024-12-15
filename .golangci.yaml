@@ -16,11 +16,13 @@ linters:
     - goconst
     - goimports
     - gosec
+    - gosimple
     - govet
     - ineffassign
-    - megacheck
     - revive
+    - staticcheck
     - typecheck
+    - unused
 
 linters-settings:
   dupl:
