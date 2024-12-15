@@ -4,4 +4,3 @@
 [cd]: https://github.com/olegdayo/bruh/actions/workflows/cd.yaml/badge.svg
 
 ![CI][ci]
-![CD][cd]
