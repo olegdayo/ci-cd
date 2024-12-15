@@ -28,12 +28,11 @@ jobs:
       - name: Setup Go
         uses: actions/setup-go@v5
         with:
-          go-version: 1.23
+          go-version: 1.22
 
       - name: golangci-lint
         uses: golangci/golangci-lint-action@v4
-        with:
-          version: v1.52.2
+
   test:
     runs-on: ubuntu-latest
     steps:
