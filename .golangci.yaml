@@ -21,7 +21,6 @@ linters:
     - ineffassign
     - revive
     - staticcheck
-    - typecheck
     - unused
 
 linters-settings:
