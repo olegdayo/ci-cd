@@ -1,5 +1,4 @@
-// Main
-
+// Package main LOL.
 package main
 
 import (
