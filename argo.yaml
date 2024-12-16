@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Workflow
+metadata:
+  generateName: argo-
+  labels:
+    workflows.argoproj.io/archive-strategy: "false"
+  annotations:
+    workflows.argoproj.io/description: This is a simple hello world example.
+spec:
+  entrypoint: build
+  templates:
+  - name: build
+    container:
+      image: golang:1.22
+      command: [sh -c]
+      args: [
+        git clone https://github.com/olegdayo/bruh &&
+        cd bruh &&
+        go build -ldflags "-s -w" -o ./bin/bruh ./cmd
+      ]
