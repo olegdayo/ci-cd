@@ -32,3 +32,12 @@ jobs:
 
       - name: golangci-lint
         uses: golangci/golangci-lint-action@v6
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Out
+        uses: actions/checkout@v4
+    
+      - name: Tests
+        run: make ci-testing
